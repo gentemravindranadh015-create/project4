@@ -1,0 +1,1262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f5f5;
+    color: #222;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    width: 100%;
+    background: #071b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 7%;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 35px;
+    color: #f4b400;
+}
+
+.logo h2 {
+    color: #f4b400;
+    font-size: 24px;
+}
+
+.logo span {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #f4b400;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 20, 35, 0.65),
+        rgba(0, 20, 35, 0.75)),
+        url("../images/stadium-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 100px 10%;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 span {
+    display: block;
+}
+
+.hero-content h2 {
+    color: #f4b400;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    background: #f4b400;
+    color: #071b32;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid #f4b400;
+}
+
+.btn-outline:hover {
+    background: #f4b400;
+    color: #071b32;
+}
+
+.small-btn {
+    margin-top: 15px;
+}
+
+
+/* SECTION */
+
+section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    color: #071b32;
+    font-size: 32px;
+}
+
+.section-title p {
+    color: #777;
+    margin-top: 10px;
+}
+
+
+/* WELCOME */
+
+.welcome-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.welcome-text {
+    flex: 1;
+}
+
+.welcome-text h3 {
+    font-size: 26px;
+    color: #071b32;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.stats {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.stat-box {
+    background: #071b32;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    border-radius: 10px;
+}
+
+.stat-box i {
+    font-size: 30px;
+    color: #f4b400;
+    margin-bottom: 10px;
+}
+
+
+/* FACILITIES */
+
+.facilities-preview {
+    background: #071b32;
+}
+
+.facilities-preview .section-title h2 {
+    color: white;
+}
+
+.facilities-preview .section-title p {
+    color: #ccc;
+}
+
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.facility-card {
+    background: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.facility-card:hover {
+    transform: translateY(-10px);
+}
+
+.facility-card i {
+    font-size: 40px;
+    color: #f4b400;
+    margin-bottom: 15px;
+}
+
+.facility-card h3 {
+    margin-bottom: 10px;
+}
+
+.center-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+/* CTA */
+
+.cta {
+    background:
+        linear-gradient(rgba(0, 30, 50, 0.85),
+        rgba(0, 30, 50, 0.85)),
+        url("../images/stadium2.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+    color: white;
+}
+
+.cta h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #04101e;
+    color: white;
+    padding: 40px 10% 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content h2 {
+    color: #f4b400;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.social-icons a:hover {
+    color: #f4b400;
+}
+
+footer hr {
+    margin: 25px 0;
+    border-color: #333;
+}
+
+.copyright {
+    text-align: center;
+    color: #aaa;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 900px) {
+
+    .nav-links {
+        gap: 10px;
+        font-size: 13px;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .welcome-container {
+        flex-direction: column;
+    }
+
+    .facility-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .facility-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+/* ================= ABOUT PAGE ================= */
+
+.page-banner {
+    margin-top: 70px;
+    padding: 100px 10%;
+    text-align: center;
+    color: white;
+    background:
+        linear-gradient(rgba(0, 20, 35, 0.8),
+        rgba(0, 20, 35, 0.8)),
+        url("../images/stadium1.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.page-banner h1 {
+    font-size: 45px;
+    color: #f4b400;
+    margin-bottom: 15px;
+}
+
+.page-banner p {
+    font-size: 18px;
+}
+
+
+/* ABOUT SECTION */
+
+.about-section {
+    background: #f5f5f5;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 20px;
+    border: 5px solid #f4b400;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.about-text {
+    flex: 1.5;
+}
+
+.about-text h2 {
+    font-size: 35px;
+    color: #071b32;
+    margin-bottom: 10px;
+}
+
+.about-text h3 {
+    color: #f4b400;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+/* VISION AND MISSION */
+
+.vision-section {
+    background: #071b32;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.vision-card {
+    background: white;
+    max-width: 500px;
+    text-align: center;
+    padding: 45px 30px;
+    border-radius: 15px;
+}
+
+.vision-card i {
+    font-size: 50px;
+    color: #f4b400;
+    margin-bottom: 20px;
+}
+
+.vision-card h2 {
+    color: #071b32;
+    margin-bottom: 15px;
+}
+
+.vision-card p {
+    line-height: 1.7;
+}
+
+
+/* WHY CHOOSE US */
+
+.why-us {
+    background: white;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.why-card {
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 12px;
+    background: #f5f5f5;
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.why-card i {
+    font-size: 40px;
+    color: #f4b400;
+    margin-bottom: 15px;
+}
+
+.why-card h3 {
+    color: #071b32;
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    line-height: 1.6;
+}
+
+
+/* ABOUT PAGE MOBILE */
+
+@media(max-width: 800px) {
+
+    .about-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .vision-section {
+        flex-direction: column;
+    }
+
+    .vision-card {
+        max-width: 100%;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* ================= FACILITIES PAGE ================= */
+
+.all-facilities {
+    background: #f5f5f5;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.facility-box {
+    background: white;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    border-bottom: 4px solid transparent;
+}
+
+.facility-box:hover {
+    transform: translateY(-10px);
+    border-bottom: 4px solid #f4b400;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.facility-icon {
+    width: 75px;
+    height: 75px;
+    background: #071b32;
+    color: #f4b400;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facility-icon i {
+    font-size: 32px;
+}
+
+.facility-box h3 {
+    color: #071b32;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.facility-box p {
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* FACILITY HIGHLIGHT */
+
+.facility-highlight {
+    background:
+        linear-gradient(rgba(0, 20, 35, 0.85),
+        rgba(0, 20, 35, 0.85)),
+        url("../images/stadium2.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+}
+
+.highlight-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.highlight-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #f4b400;
+}
+
+.highlight-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    .facilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .facilities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .highlight-content h2 {
+        font-size: 30px;
+    }
+
+}
+/* ================= GALLERY PAGE ================= */
+
+.gallery-section {
+    background: #f5f5f5;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 250px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 15px;
+
+    background: rgba(7, 27, 50, 0.85);
+    color: white;
+
+    transform: translateY(100%);
+    transition: 0.4s;
+}
+
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+}
+
+
+/* GALLERY CTA */
+
+.gallery-cta {
+    text-align: center;
+    background: #071b32;
+    color: white;
+}
+
+.gallery-cta h2 {
+    color: #f4b400;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.gallery-cta p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 900px) {
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 230px;
+    }
+
+}
+/* ================= BOOKING PAGE ================= */
+
+.booking-section {
+    background: #f5f5f5;
+}
+
+.booking-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: start;
+}
+
+
+/* BOOKING INFORMATION */
+
+.booking-info {
+    background: #071b32;
+    color: white;
+    padding: 45px 35px;
+    border-radius: 15px;
+}
+
+.booking-info h2 {
+    color: #f4b400;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.booking-info > p {
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 35px;
+}
+
+.booking-feature {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.booking-feature i {
+    width: 55px;
+    height: 55px;
+    background: #f4b400;
+    color: #071b32;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+}
+
+.booking-feature h3 {
+    margin-bottom: 5px;
+}
+
+.booking-feature p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+
+/* BOOKING FORM */
+
+.booking-form-box {
+    background: white;
+    padding: 45px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.booking-form-box h2 {
+    color: #071b32;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #071b32;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #f4b400;
+    box-shadow: 0 0 0 3px rgba(244,180,0,0.15);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.booking-btn {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .booking-form-box {
+        padding: 30px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+}
+/* ================= NEWS & EVENTS PAGE ================= */
+
+.news-section {
+    background: #f5f5f5;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.news-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.event-date {
+    min-width: 65px;
+    height: 75px;
+    background: #f4b400;
+    color: #071b32;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+.event-date span {
+    font-size: 25px;
+}
+
+.event-date small {
+    font-size: 12px;
+}
+
+.news-content h3 {
+    color: #071b32;
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.event-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 13px;
+    color: #555;
+}
+
+.event-info i {
+    color: #f4b400;
+    margin-right: 5px;
+}
+
+
+/* STADIUM NEWS */
+
+.stadium-news {
+    background: #071b32;
+}
+
+.stadium-news .section-title h2 {
+    color: white;
+}
+
+.stadium-news .section-title p {
+    color: #ccc;
+}
+
+.news-highlight {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+    padding: 45px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.news-icon {
+    min-width: 100px;
+    height: 100px;
+    background: #071b32;
+    color: #f4b400;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-icon i {
+    font-size: 50px;
+}
+
+.news-highlight h2 {
+    color: #071b32;
+    margin-bottom: 15px;
+}
+
+.news-highlight p {
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .news-card {
+        flex-direction: column;
+    }
+
+    .news-highlight {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+}
+/* ================= CONTACT PAGE ================= */
+
+.contact-section {
+    background: #f5f5f5;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+}
+
+
+/* CONTACT INFORMATION */
+
+.contact-info {
+    background: #071b32;
+    color: white;
+    padding: 45px 35px;
+    border-radius: 15px;
+}
+
+.contact-info > h2 {
+    color: #f4b400;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    color: #ddd;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.contact-item i {
+    width: 50px;
+    height: 50px;
+    background: #f4b400;
+    color: #071b32;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+}
+
+.contact-item h3 {
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    color: #ccc;
+    line-height: 1.5;
+}
+
+
+/* SOCIAL MEDIA */
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.contact-social h3 {
+    color: #f4b400;
+    margin-bottom: 15px;
+}
+
+.contact-social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 45px;
+    height: 45px;
+
+    background: white;
+    color: #071b32;
+
+    border-radius: 50%;
+    margin-right: 10px;
+
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-social a:hover {
+    background: #f4b400;
+    transform: translateY(-5px);
+}
+
+
+/* CONTACT FORM */
+
+.contact-form-box {
+    background: white;
+    padding: 45px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.contact-form-box h2 {
+    color: #071b32;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* MAP SECTION */
+
+.map-section {
+    background: white;
+}
+
+.map-box {
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 30px;
+
+    background: #e8eef3;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px dashed #f4b400;
+}
+
+.map-box i {
+    font-size: 60px;
+    color: #f4b400;
+    margin-bottom: 20px;
+}
+
+.map-box h2 {
+    color: #071b32;
+    margin-bottom: 10px;
+}
+
+.map-box p {
+    color: #666;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .contact-info,
+    .contact-form-box {
+        padding: 30px 20px;
+    }
+
+    .contact-item {
+        align-items: flex-start;
+    }
+
+}
+
+/* Facilities page images */
+.facility-box {
+    overflow: hidden;
+    padding: 0 0 25px;
+}
+.facility-photo {
+    width: 100%;
+    height: 190px;
+    display: block;
+    object-fit: cover;
+    border-radius: 14px 14px 0 0;
+}
+.facility-box .facility-icon {
+    position: relative;
+    z-index: 2;
+    margin: -30px auto 12px;
+    border: 4px solid #fff;
+}
+.facility-box h3,
+.facility-box p {
+    margin-left: 20px;
+    margin-right: 20px;
+}

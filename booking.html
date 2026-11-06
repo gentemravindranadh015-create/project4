@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Booking | Ravi Cricket Stadium</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <i class="fa-solid fa-baseball-bat-ball"></i>
+
+                <div>
+                    <h2>RAVI</h2>
+                    <span>CRICKET STADIUM</span>
+                </div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <h1>BOOK THE STADIUM</h1>
+        <p>Reserve your slot and enjoy the ultimate cricket experience 🏏</p>
+    </section>
+
+
+    <!-- BOOKING SECTION -->
+    <section class="booking-section">
+
+        <div class="booking-container">
+
+            <!-- BOOKING INFORMATION -->
+            <div class="booking-info">
+
+                <h2>Book Your Cricket Match</h2>
+
+                <p>
+                    Fill out the booking form and send your request.
+                    We will contact you to confirm your stadium booking.
+                </p>
+
+                <div class="booking-feature">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <div>
+                        <h3>Easy Booking</h3>
+                        <p>Select your preferred date and time.</p>
+                    </div>
+                </div>
+
+                <div class="booking-feature">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h3>Flexible Time Slots</h3>
+                        <p>Choose a suitable time for your match.</p>
+                    </div>
+                </div>
+
+                <div class="booking-feature">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h3>Quick Confirmation</h3>
+                        <p>Our team will contact you after receiving your request.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- BOOKING FORM -->
+            <div class="booking-form-box">
+
+                <h2>Booking Form</h2>
+
+                <form id="bookingForm">
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required
+                               placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required
+                               placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required
+                               placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="date">Match Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+
+                            <select id="time" required>
+                                <option value="">Select Time</option>
+                                <option>Morning (6 AM - 10 AM)</option>
+                                <option>Afternoon (10 AM - 4 PM)</option>
+                                <option>Evening (4 PM - 8 PM)</option>
+                                <option>Night (8 PM - 11 PM)</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="matchType">Match Type</label>
+
+                        <select id="matchType" required>
+                            <option value="">Select Match Type</option>
+                            <option>Practice Match</option>
+                            <option>Friendly Match</option>
+                            <option>Tournament Match</option>
+                            <option>Corporate Match</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="players">Number of Players</label>
+                        <input type="number" id="players" min="2" required
+                               placeholder="Enter number of players">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Special Request</label>
+                        <textarea id="message" rows="4"
+                                  placeholder="Enter any special requests..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn booking-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Send Booking Request
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>RAVI CRICKET STADIUM</h2>
+                <p>Where Passion Meets the Pitch 🏏</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 Ravi Cricket Stadium | All Rights Reserved
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
